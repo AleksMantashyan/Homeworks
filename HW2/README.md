@@ -171,29 +171,3 @@ With the same 20,000-trial configuration and different random seeds:
 | Runs with pseudo-regret above 10,000 | 2 / 30 | 0 / 30 |
 
 These results demonstrate why the single-run comparison should not be the sole basis for evaluating a policy. **Epsilon-Greedy typically performed well but experienced two near-complete failures to identify the best advertisement.** Because epsilon decreases as `1/t`, early misleading observations can leave insufficient later exploration. Thompson Sampling was more consistent over these 30 seeds, although its typical (median) pseudo-regret was a little higher. Thirty runs remain a limited sample; much larger replication counts would be needed for precise tail-risk estimates.
-
-## 9. Submission structure
-
-Use **one** GitHub repository named `Homeworks` and put this homework under its own folder:
-
-```text
-Homeworks/
-├── HW1/                  # Move previously submitted HW1 files here
-└── HW2/
-    ├── Bandit.py
-    ├── requirements.txt
-    ├── README.md
-    ├── .gitignore
-    ├── tests/
-    │   └── test_bandit.py
-    └── results/
-        ├── rewards.csv
-        ├── epsilon_greedy_learning.png
-        ├── thompson_sampling_learning.png
-        ├── algorithm_comparison.png
-        ├── bonus_robustness.csv
-        ├── bonus_robustness_runs.csv
-        └── bonus_regret_distribution.png
-```
-
-Keep any other assignment in its own `HW3/`, etc. **Commit and push** the changes, check that the files are visible on the GitHub website, and submit the **repository link only** to Moodle as instructed. `HW1` is shown as a placeholder in the diagram; it is not included in this HW2 package because the earlier HW1 files were not uploaded here.
