@@ -1,0 +1,4 @@
+experiment,seed,true_means,sigma,rounds,estimated_mean_1,estimated_mean_2,estimated_mean_3,selections_1,selections_2,selections_3,recommendation,total_observed_reward
+Short run,42,"[1, 2, 3]",1.0,100,1.570217,1.728703,2.994983,4,2,94,Alternative 3,291.51839
+Longer run,42,"[1, 2, 3]",1.0,1000,1.306247,2.142116,2.979191,5,13,982,Alternative 3,2960.201477
+Higher noise,42,"[1, 2, 3]",3.0,1000,1.153692,1.483757,2.954223,21,23,956,Alternative 3,2884.604431
